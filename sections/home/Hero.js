@@ -16,7 +16,7 @@ const Hero = () => {
       </ParallaxBannerLayer>
       <ParallaxBannerLayer speed={-30}>
         <div className="absolute inset-0 flex items-center justify-center max-w-7xl mx-auto p-3">
-          <h1 className="text-white font-thin uppercase text-8xl">{homeData.hero.title}</h1>
+          <h1 className="text-white font-thin uppercase">{homeData.hero.title}</h1>
         </div>
       </ParallaxBannerLayer>
     </ParallaxBanner>

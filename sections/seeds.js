@@ -1,7 +1,7 @@
 // ---------------------- change home data from here ------------------------
 export const homeData = {
   hero: {
-    image: "/homeImages/hero.jpg",
+    image: "/homeImages/hero.JPG",
     title: "Hello!",
   },
   trophies: { image: "/homeImages/trophy.jpg" },
