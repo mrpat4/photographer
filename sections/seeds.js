@@ -42,7 +42,7 @@ export const homeData = {
   instagram: {
     image: "/homeImages/blur.jpg",
     title: "Arash's Instagram",
-    buttonText: "Say hi to me !!",
+    buttonText: "Say hi to me !",
     buttonLink: "https://instagram.com/arash_payam",
   },
   videos: {

@@ -6,17 +6,9 @@ import { homeData } from "../seeds";
 
 const Videos = () => {
   return (
-    <ParallaxBanner className="h-[650px]">
+    <ParallaxBanner className="max-h-[700px] min-h-[600px]">
       <ParallaxBannerLayer speed={-20}>
-        <video
-          autoplay="true"
-          muted="true"
-          loop="true"
-          poster={homeData.videos.videoCover}
-          id="bgvideo"
-          style={{ width: "100%", height: "100%" }}
-          controls="false"
-        >
+        <video autoplay="true" muted="true" loop="true" poster={homeData.videos.videoCover} id="bgvideo" style={{ width: "100%" }} controls="false">
           <source src={homeData.videos.video} type="video/mp4" />
         </video>
       </ParallaxBannerLayer>

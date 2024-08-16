@@ -32,7 +32,7 @@ const AboutSection = () => {
       </div>
       <div className="grid grid-cols-[1fr_2fr_1fr] gap-2">
         {aboutData.images.map((item) => (
-          <img key={item.name} src={item.imageAddress} alt={item.name} className="h-[380px] w-full object-cover" />
+          <img key={item.name} src={item.imageAddress} alt={item.name} className="h-[380px] w-full object-cover" loading="lazy" />
         ))}
       </div>
     </div>
