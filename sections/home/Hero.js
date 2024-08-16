@@ -14,11 +14,11 @@ const Hero = () => {
           style={{ objectFit: "cover", objectPosition: "center", width: "100%", height: "100%" }}
         />
       </ParallaxBannerLayer>
-      <ParallaxBannerLayer speed={-30}>
+      {/* <ParallaxBannerLayer speed={-30}>
         <div className="absolute inset-0 flex items-center justify-center max-w-7xl mx-auto p-3">
           <h1 className="text-white font-thin uppercase">{homeData.hero.title}</h1>
         </div>
-      </ParallaxBannerLayer>
+      </ParallaxBannerLayer> */}
     </ParallaxBanner>
   );
 };

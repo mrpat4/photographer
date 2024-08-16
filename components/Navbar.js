@@ -24,12 +24,19 @@ export default function Navbar() {
               )}
             </Link>
           ) : (
-            <Link href="/" className="text-black">
+            <Link href="/" className="group text-black ">
               <div className="max-w-20">
                 <img className="w-full" src="/logo/logo-black.png" alt="logo" />
               </div>
               {path === "/about" || path === "/images" ? (
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                <svg
+                  className="group-hover:-translate-x-1 transition-transform duration-300 size-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
                 </svg>
               ) : (
@@ -41,7 +48,9 @@ export default function Navbar() {
           <ul className=" flex items-center gap-4 rounded-navbar px-12 py-2 pr-0">
             <li className="pr-4">
               <Link
-                className={`text-navbar-text text-14  ${path === "/images" ? "text-primary" : isItHome ? "text-white" : "text-black"}`}
+                className={`text-navbar-text text-14  ${
+                  path === "/images" ? "text-primary" : isItHome ? "text-white" : "text-black"
+                } hover:text-primary transition-colors duration-300 `}
                 href={"/images"}
               >
                 Image
@@ -49,7 +58,9 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                className={`text-navbar-text text-14  ${path === "/about" ? "text-primary" : isItHome ? "text-white" : "text-black"}`}
+                className={`text-navbar-text text-14  ${
+                  path === "/about" ? "text-primary" : isItHome ? "text-white" : "text-black"
+                } hover:text-primary transition-colors duration-300 `}
                 href={"/about"}
               >
                 About

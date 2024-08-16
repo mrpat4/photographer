@@ -1,10 +1,34 @@
+import { FiveHundred, Instagram, Telegram, Unsplash } from "@/components/Icons";
+
 // ---------------------- change home data from here ------------------------
 export const homeData = {
   hero: {
     image: "/homeImages/hero.JPG",
     title: "Hello!",
   },
-  trophies: { image: "/homeImages/trophy.jpg" },
+  trophies: {
+    image: "/homeImages/trophy.jpg",
+    trophyItems: [
+      { name: "8", image: "/trophies/8.png" },
+      { name: "7", image: "/trophies/7.png" },
+      { name: "6", image: "/trophies/6.png" },
+      { name: "4", image: "/trophies/4.png" },
+      { name: "2", image: "/trophies/2.png" },
+      { name: "1", image: "/trophies/1.png" },
+      { name: "3", image: "/trophies/3.png" },
+      { name: "9", image: "/trophies/9.png" },
+      { name: "10", image: "/trophies/10.png" },
+      { name: "11", image: "/trophies/11.png" },
+      { name: "12", image: "/trophies/12.png" },
+      { name: "13", image: "/trophies/13.png" },
+      { name: "14", image: "/trophies/14.png" },
+      { name: "5", image: "/trophies/5.png" },
+      { name: "15", image: "/trophies/15.png" },
+      { name: "16", image: "/trophies/16.png" },
+      { name: "17", image: "/trophies/17.png" },
+      { name: "18", image: "/trophies/18.png" },
+    ],
+  },
   images: {
     image: "/homeImages/dejavu.jpeg",
     title: "Images",
@@ -28,14 +52,35 @@ export const homeData = {
     linkText: "View More",
     linkAddress: "https://youtube.com/arash-payam",
   },
+  contact: {
+    phoneText: "Give me a call",
+    phoneNo: "+989211808970",
+    socials: [
+      { name: "instagram", icon: <Instagram />, address: "https://instagram.com/arash_payam" },
+      { name: "telegram", icon: <Telegram />, address: "https://telegram.me/arash_payam" },
+      { name: "fiveHundred", icon: <FiveHundred />, address: "https://500px.com/old-fox" },
+      { name: "unsplash", icon: <Unsplash />, address: "" },
+    ],
+  },
+};
+// ---------------------- change about data from here ------------------------
+export const aboutData = {
+  title: "About",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nam at velit, corporis quod molestiae sed magnam et harum quis illum voluptatibus! Velit, delectus cum laborum odio fuga eaque expedita.",
+  images: [
+    { name: "left", imageAddress: "/about/left.jpg" },
+    { name: "middle", imageAddress: "/about/middle.jpg" },
+    { name: "right", imageAddress: "/about/right.jpg" },
+  ],
 };
 
 // ---------------------- change gallery data from here ------------------------
 export const galleryData = [
   { name: "Lonely in crowd", className: "vertical", url: "/workImages/01-lonleyInCrowd-v.JPG" },
-  { name: "Ghost in town", className: "vertical", url: "/workImages/02-ghostInTown-v.jpg" },
+  { name: "Ghost in town", className: "vertical", url: "/workImages/02-ghostInTown-v.JPG" },
   { name: "I'm done", className: "horizontal", url: "/workImages/03-imDone-h.jpg" },
-  { name: "Roof of the sky", className: "vertical", url: "/workImages/04-roofOfTheSky.jpg" },
+  { name: "Roof of the sky", className: "vertical", url: "/workImages/04-roofOfTheSky.JPG" },
   { name: "The beach", className: "", url: "/workImages/05-theBeach.JPG" },
   { name: "Lonely ship", className: "", url: "/workImages/06-lonleyShip.jpeg" },
   { name: "Sad girl", className: "", url: "/workImages/07-sadGril.jpg" },
