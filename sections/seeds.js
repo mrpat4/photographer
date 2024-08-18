@@ -67,7 +67,7 @@ export const homeData = {
 export const aboutData = {
   title: "About",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nam at velit, corporis quod molestiae sed magnam et harum quis illum voluptatibus! Velit, delectus cum laborum odio fuga eaque expedita.",
+    "Arash Payam is a dedicated filmmaker and photographer with over eight years of experience in the industry. His journey has taken him to various film festivals and photography contests, where his work has been recognized and celebrated. He’s passion for visual storytelling is evident in every project he undertakes, whether it’s behind the camera or in the editing room. He is always exploring new techniques and perspectives to enhance his creative vision. Whether it’s a short film, a documentary, or a photograph.",
   images: [
     { name: "left", imageAddress: "/about/left.jpg" },
     { name: "middle", imageAddress: "/about/middle.jpg" },
@@ -97,8 +97,8 @@ export const galleryData = [
   { name: "The alley", className: "", url: "/workImages/18-the alley.jpeg" },
   { name: "Fast road", className: "vertical", url: "/workImages/19-fastRoad.JPG" },
   { name: "The moon", className: "vertical", url: "/workImages/20-theMoon-v.png" },
-  { name: "Theater house", className: "vertical", url: "/workImages/21-theaterHouse-v.jpg" },
   { name: "Dejavu", className: "", url: "/workImages/22-dejaVu.jpeg" },
+  { name: "Theater house", className: "vertical", url: "/workImages/21-theaterHouse-v.jpg" },
   { name: "Fisherman", className: "vertical", url: "/workImages/23-fisherman-v.jpeg" },
   { name: "Ghost girl", className: "vertical", url: "/workImages/24-ghostGirl-v.JPG" },
   { name: "Textures", className: "horizontal", url: "/workImages/25-textures-h.jpg" },
@@ -118,5 +118,8 @@ export const galleryData = [
   { name: "The wish", className: "", url: "/workImages/39-theWish.JPG" },
   { name: "Sky is hight", className: "", url: "/workImages/40-skyIsHigh.jpg" },
   { name: "Subway", className: "", url: "/workImages/subway.jpeg" },
+  { name: "cold Fog", className: "big", url: "/workImages/coldFog.jpg" },
+  { name: "don't Go Further", className: "vertical", url: "/workImages/dontGoFurther.jpg" },
   { name: "The sea", className: "", url: "/workImages/theSea.jpg" },
+  { name: "Bravery", className: "horizontal", url: "/workImages/bravery.jpg" },
 ];
