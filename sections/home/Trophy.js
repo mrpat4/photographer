@@ -20,7 +20,7 @@ const Trophy = () => {
           <div className="grid grid-cols-9 gap-2 gap-y-5 justify-center items-center w-full">
             <Bounce cascade triggerOnce>
               {homeData.trophies.trophyItems.map((item) => (
-                <div className="w-full">
+                <div className="w-full" key={item.name}>
                   <img key={item.name} src={item.image} alt={item.name} className="w-full" />
                 </div>
               ))}

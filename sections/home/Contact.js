@@ -12,15 +12,12 @@ const Contact = () => {
     <ParallaxBanner className="m-h-[600px] h-[650px] bg-white">
       <ParallaxBannerLayer speed={-20}>
         <div className="absolute inset-0 flex flex-col items-center justify-center max-w-7xl mx-auto p-3">
-          <Link
-            className="group uppercase text-4xl hover:text-primary font-light transition-colors duration-300"
-            href={`tel:${homeData.contact.phoneNo}`}
-          >
+          <h1 className="group uppercase text-4xl hover:text-primary font-light transition-colors duration-300">
             {homeData.contact.phoneText}
             <span className="inline-block opacity-0 translate-y-5 group-hover:opacity-100 group-hover:-translate-y-0 transition-all duration-300 text-4xl">
               !
             </span>
-          </Link>
+          </h1>
           <ul className="flex gap-10 mt-12">
             {homeData.contact.socials.map((item) => (
               <li key={item.name}>

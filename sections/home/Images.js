@@ -14,7 +14,7 @@ const Images = () => {
           children: (
             <div className="absolute inset-0 flex flex-col items-start justify-center max-w-7xl mx-auto p-3">
               <h1 className="text-black font-thin uppercase">{homeData.images.title}</h1>
-              <Link href={"/images"} className="group text-primary underline underline-offset-8 flex gap-2 items-end uppercase text-lg">
+              <Link href={"/gallery"} className="group text-primary underline underline-offset-8 flex gap-2 items-end uppercase text-lg">
                 {homeData.images.linkText}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

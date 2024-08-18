@@ -15,7 +15,7 @@ export default function Navbar() {
               <div className="max-w-20">
                 <img className="w-full" src="/logo/logo-white.png" alt="logo" />
               </div>
-              {path === "/about" || path === "/images" ? (
+              {path === "/about" || path === "/gallery" ? (
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
                 </svg>
@@ -28,7 +28,7 @@ export default function Navbar() {
               <div className="max-w-20">
                 <img className="w-full" src="/logo/logo-black.png" alt="logo" />
               </div>
-              {path === "/about" || path === "/images" ? (
+              {path === "/about" || path === "/gallery" ? (
                 <svg
                   className="group-hover:-translate-x-1 transition-transform duration-300 size-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -49,11 +49,11 @@ export default function Navbar() {
             <li className="pr-4">
               <Link
                 className={`text-navbar-text text-14  ${
-                  path === "/images" ? "text-primary" : isItHome ? "text-white" : "text-black"
+                  path === "/gallery" ? "text-primary" : isItHome ? "text-white" : "text-black"
                 } hover:text-primary transition-colors duration-300 `}
-                href={"/images"}
+                href={"/gallery"}
               >
-                Image
+                Gallery
               </Link>
             </li>
             <li>

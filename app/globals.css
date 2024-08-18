@@ -67,13 +67,6 @@ span {
   position: relative;
   border-radius: 7px;
 }
-.gallery-item-wrapper > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 7px;
-  object-position: top center;
-}
 .gallery-title-wrapper {
   position: absolute;
   bottom: 15%;

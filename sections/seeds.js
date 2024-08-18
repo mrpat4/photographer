@@ -1,4 +1,4 @@
-import { FiveHundred, Instagram, Telegram, Unsplash } from "@/components/Icons";
+import { FiveHundred, Instagram, Phone, Telegram, Unsplash } from "@/components/Icons";
 
 // ---------------------- change home data from here ------------------------
 export const homeData = {
@@ -31,7 +31,7 @@ export const homeData = {
   },
   images: {
     image: "/homeImages/dejavu.jpeg",
-    title: "Images",
+    title: "Gallery",
     linkText: "View More",
   },
   about: {
@@ -53,13 +53,14 @@ export const homeData = {
     linkAddress: "https://youtube.com/arash-payam",
   },
   contact: {
-    phoneText: "Give me a call",
+    phoneText: "Give me a visit",
     phoneNo: "+989211808970",
     socials: [
       { name: "instagram", icon: <Instagram />, address: "https://instagram.com/arash_payam" },
       { name: "telegram", icon: <Telegram />, address: "https://telegram.me/arash_payam" },
-      { name: "fiveHundred", icon: <FiveHundred />, address: "https://500px.com/old-fox" },
+      { name: "phone", icon: <Phone />, address: "tel:+989211808970" },
       { name: "unsplash", icon: <Unsplash />, address: "" },
+      { name: "fiveHundred", icon: <FiveHundred />, address: "https://500px.com/old-fox" },
     ],
   },
 };
@@ -77,49 +78,67 @@ export const aboutData = {
 
 // ---------------------- change gallery data from here ------------------------
 export const galleryData = [
-  { name: "Lonely in crowd", className: "vertical", url: "/workImages/01-lonleyInCrowd-v.JPG" },
-  { name: "Ghost in town", className: "vertical", url: "/workImages/02-ghostInTown-v.JPG" },
-  { name: "I'm done", className: "horizontal", url: "/workImages/03-imDone-h.jpg" },
-  { name: "Roof of the sky", className: "vertical", url: "/workImages/04-roofOfTheSky.JPG" },
-  { name: "The beach", className: "", url: "/workImages/05-theBeach.JPG" },
-  { name: "Lonely ship", className: "", url: "/workImages/06-lonleyShip.jpeg" },
-  { name: "Sad girl", className: "", url: "/workImages/07-sadGril.jpg" },
-  { name: "Neon night", className: "vertical", url: "/workImages/08-neonNight-v.JPG" },
-  { name: "Freedom", className: "", url: "/workImages/09-freedom.jpg" },
-  { name: "An old man", className: "vertical", url: "/workImages/10-anOldman-v.jpg" },
-  { name: "Into the tunnel", className: "", url: "/workImages/11-intoTheTunnel.jpeg" },
-  { name: "No way!", className: "vertical", url: "/workImages/12-noWay-v.JPG" },
-  { name: "Into the heaven", className: "vertical", url: "/workImages/13-intoTheHeaven-v.JPG" },
-  { name: "Look up", className: "vertical", url: "/workImages/14-lookUp-v.jpg" },
-  { name: "Break from the world", className: "", url: "/workImages/15-breakFromTheWorld-h.jpeg" },
-  { name: "Ship is down", className: "vertical", url: "/workImages/16-shipIsDown-v.jpg" },
-  { name: "Breathe", className: "horizontal", url: "/workImages/17-breath-h.jpeg" },
-  { name: "The alley", className: "", url: "/workImages/18-the alley.jpeg" },
-  { name: "Fast road", className: "vertical", url: "/workImages/19-fastRoad.JPG" },
-  { name: "The moon", className: "vertical", url: "/workImages/20-theMoon-v.png" },
-  { name: "Dejavu", className: "", url: "/workImages/22-dejaVu.jpeg" },
-  { name: "Theater house", className: "vertical", url: "/workImages/21-theaterHouse-v.jpg" },
-  { name: "Fisherman", className: "vertical", url: "/workImages/23-fisherman-v.jpeg" },
-  { name: "Ghost girl", className: "vertical", url: "/workImages/24-ghostGirl-v.JPG" },
-  { name: "Textures", className: "horizontal", url: "/workImages/25-textures-h.jpg" },
-  { name: "Dancing shadows", className: "vertical", url: "/workImages/26-dancingShadows-v.JPG" },
-  { name: "Raging tower", className: "", url: "/workImages/27-ragingTower.JPG" },
-  { name: "An old man", className: "vertical", url: "/workImages/28-anOldman-v.jpg" },
-  { name: "Cozy corner", className: "vertical", url: "/workImages/29-cozyCorner.jpg" },
-  { name: "What if", className: "vertical", url: "/workImages/30-whatIf-v.JPG" },
-  { name: "The stairs", className: "vertical", url: "/workImages/31-theStairs-v.jpg" },
-  { name: "An empty way", className: "vertical", url: "/workImages/32-anEmptyWay-v.JPG" },
-  { name: "The light", className: "", url: "/workImages/33-theLight.JPG" },
-  { name: "A horse with no name", className: "vertical", url: "/workImages/34-aHorseWithNoName-v.JPG" },
-  { name: "Dancing fire", className: "vertical", url: "/workImages/35-dancingFire-v.jpg" },
-  { name: "Khayam", className: "horizontal", url: "/workImages/36-khayam-h.jpg" },
-  { name: "Lonely boat", className: "vertical", url: "/workImages/37-lonleyBoat-v.JPG" },
-  { name: "Cold building", className: "horizontal", url: "/workImages/38-coldBulding-h.jpeg" },
-  { name: "The wish", className: "", url: "/workImages/39-theWish.JPG" },
-  { name: "Sky is hight", className: "", url: "/workImages/40-skyIsHigh.jpg" },
-  { name: "Subway", className: "", url: "/workImages/subway.jpeg" },
-  { name: "cold Fog", className: "big", url: "/workImages/coldFog.jpg" },
-  { name: "don't Go Further", className: "vertical", url: "/workImages/dontGoFurther.jpg" },
-  { name: "The sea", className: "", url: "/workImages/theSea.jpg" },
-  { name: "Bravery", className: "horizontal", url: "/workImages/bravery.jpg" },
+  { name: "Lonely in crowd", imageClass: "", className: "vertical", url: "/workImages/01-lonleyInCrowd-v.JPG" },
+  { name: "Ghost in town", imageClass: "", className: "vertical", url: "/workImages/02-ghostInTown-v.JPG" },
+  { name: "I'm done", imageClass: "", className: "horizontal", url: "/workImages/03-imDone-h.jpg" },
+  { name: "Roof of the sky", imageClass: "", className: "vertical", url: "/workImages/04-roofOfTheSky.JPG" },
+  { name: "The beach", imageClass: "", className: "", url: "/workImages/05-theBeach.JPG" },
+  { name: "Lonely ship", imageClass: "", className: "", url: "/workImages/06-lonleyShip.jpeg" },
+  { name: "Sad girl", imageClass: "", className: "", url: "/workImages/07-sadGril.jpg" },
+  { name: "Neon night", imageClass: "", className: "vertical", url: "/workImages/08-neonNight-v.JPG" },
+  { name: "Freedom", imageClass: "", className: "", url: "/workImages/09-freedom.jpg" },
+  { name: "An old man", imageClass: "", className: "vertical", url: "/workImages/10-anOldman-v.jpg" },
+  { name: "Into the tunnel", imageClass: "", className: "", url: "/workImages/11-intoTheTunnel.jpeg" },
+  { name: "No way!", imageClass: "", className: "vertical", url: "/workImages/12-noWay-v.JPG" },
+  { name: "Into the heaven", imageClass: "", className: "vertical", url: "/workImages/13-intoTheHeaven-v.JPG" },
+  { name: "Look up", imageClass: "", className: "vertical", url: "/workImages/14-lookUp-v.jpg" },
+  { name: "Break from the world", imageClass: "", className: "", url: "/workImages/15-breakFromTheWorld-h.jpeg" },
+  { name: "Ship is down", imageClass: "", className: "vertical", url: "/workImages/16-shipIsDown-v.jpg" },
+  { name: "Breathe", imageClass: "", className: "horizontal", url: "/workImages/17-breath-h.jpeg" },
+  { name: "The alley", imageClass: "", className: "", url: "/workImages/18-the alley.jpeg" },
+  { name: "Fast road", imageClass: "", className: "vertical", url: "/workImages/19-fastRoad.JPG" },
+  { name: "The moon", imageClass: "", className: "vertical", url: "/workImages/20-theMoon-v.png" },
+  { name: "Dejavu", imageClass: "", className: "", url: "/workImages/22-dejaVu.jpeg" },
+  { name: "Theater house", imageClass: "", className: "vertical", url: "/workImages/21-theaterHouse-v.jpg" },
+  { name: "Fisherman", imageClass: "", className: "vertical", url: "/workImages/23-fisherman-v.jpeg" },
+  { name: "Ghost girl", imageClass: "", className: "vertical", url: "/workImages/24-ghostGirl-v.JPG" },
+  { name: "Textures", imageClass: "", className: "horizontal", url: "/workImages/25-textures-h.jpg" },
+  { name: "Dancing shadows", imageClass: "", className: "vertical", url: "/workImages/26-dancingShadows-v.JPG" },
+  { name: "Raging tower", imageClass: "", className: "", url: "/workImages/27-ragingTower.JPG" },
+  { name: "An old man", imageClass: "", className: "vertical", url: "/workImages/28-anOldman-v.jpg" },
+  { name: "Cozy corner", imageClass: "", className: "vertical", url: "/workImages/29-cozyCorner.jpg" },
+  { name: "What if", imageClass: "", className: "vertical", url: "/workImages/30-whatIf-v.JPG" },
+  { name: "The stairs", imageClass: "", className: "vertical", url: "/workImages/31-theStairs-v.jpg" },
+  { name: "An empty way", imageClass: "", className: "vertical", url: "/workImages/32-anEmptyWay-v.JPG" },
+  { name: "The light", imageClass: "", className: "", url: "/workImages/33-theLight.JPG" },
+  { name: "A horse with no name", imageClass: "", className: "vertical", url: "/workImages/34-aHorseWithNoName-v.JPG" },
+  { name: "Dancing fire", imageClass: "", className: "vertical", url: "/workImages/35-dancingFire-v.jpg" },
+  { name: "Khayam", imageClass: "", className: "horizontal", url: "/workImages/36-khayam-h.jpg" },
+  { name: "Lonely boat", imageClass: "", className: "vertical", url: "/workImages/37-lonleyBoat-v.JPG" },
+  { name: "Cold building", imageClass: "", className: "horizontal", url: "/workImages/38-coldBulding-h.jpeg" },
+  { name: "The wish", imageClass: "object-center", className: "", url: "/workImages/39-theWish.JPG" },
+  { name: "Sky is hight", imageClass: "", className: "", url: "/workImages/40-skyIsHigh.jpg" },
+  { name: "Subway", imageClass: "", className: "", url: "/workImages/subway.jpeg" },
+  { name: "cold Fog", imageClass: "", className: "big", url: "/workImages/coldFog.jpg" },
+  { name: "don't Go Further", imageClass: "", className: "vertical", url: "/workImages/dontGoFurther.jpg" },
+  { name: "The sea", imageClass: "", className: "", url: "/workImages/theSea.jpg" },
+  { name: "Bravery", imageClass: "", className: "horizontal", url: "/workImages/bravery.jpg" },
 ];
+
+// ---------------------------------- Guidance -----------------------------
+/*------------- imageClass -------------------
+object-center ---->  center;
+object-left ---->  left;
+object-left-bottom ---->  left bottom;
+object-left-top ---->  left top;
+object-right ---->  right;
+object-right-bottom ---->  right bottom;
+object-right-top ---->  right top;
+object-top ---->  top;
+*/
+
+/* ------------- className -------------
+horizontal ----> ofoghi
+vertical ----> amudi
+big ----> bozorg(ofoghi va amudi)
+*/
