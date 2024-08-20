@@ -29,7 +29,7 @@ const Videos = () => {
           poster={homeData.videos.videoCover}
           id="bgvideo"
           playsinline="true"
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full md:object-cover object-contain object-top"
         >
           <source src={isSmallScreen ? homeData.videos.smallVideo : homeData.videos.video} type="video/mp4" />
         </video>
