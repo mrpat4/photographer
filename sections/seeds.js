@@ -50,7 +50,7 @@ export const homeData = {
     videoCover: "/homeImages/cover.jpg",
     title: "Youtube",
     linkText: "View More",
-    linkAddress: "https://unsplash.com/@arash_payam",
+    linkAddress: "https://www.youtube.com/@arashpayam622",
     smallVideo: "/videos/rezomeV.mp4",
   },
   contact: {

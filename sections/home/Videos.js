@@ -39,6 +39,7 @@ const Videos = () => {
           <h1 className="md:text-h1 text-h2 text-white font-thin uppercase ">{homeData.videos.title}</h1>
           <Link
             href={homeData.videos.linkAddress}
+            target="_blank"
             className="group text-primary uppercase underline underline-offset-8 flex gap-2 items-end md:text-lg text-span"
           >
             {homeData.videos.linkText}
