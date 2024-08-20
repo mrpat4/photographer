@@ -28,7 +28,7 @@ const ImageModal = ({ selectedImage, closeModal, showNextImage, showPrevImage, c
         <div className="text-center mt-2">{selectedImage.name}</div>
         {currentIndex > 0 && (
           <button
-            className="md:text-white text-black absolute md:-left-10 left-0 top-1/2 transform -translate-y-1/2 text-2xl hover:text-primary transition-colors duration-300"
+            className="md:text-white text-black absolute md:-left-10 left-10 -bottom-1 transform -translate-y-1/2 text-2xl hover:text-primary transition-colors duration-300"
             onClick={showPrevImage}
           >
             ❮
@@ -36,7 +36,7 @@ const ImageModal = ({ selectedImage, closeModal, showNextImage, showPrevImage, c
         )}
         {currentIndex < totalImages - 1 && (
           <button
-            className=" md:text-white text-black absolute md:-right-10 right-0 top-1/2 transform -translate-y-1/2 text-2xl hover:text-primary transition-colors duration-300"
+            className=" md:text-white text-black absolute md:-right-10 right-10 -bottom-1 transform -translate-y-1/2 text-2xl hover:text-primary transition-colors duration-300"
             onClick={showNextImage}
           >
             ❯

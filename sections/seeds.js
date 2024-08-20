@@ -3,7 +3,7 @@ import { FiveHundred, Instagram, Phone, Telegram, Unsplash } from "@/components/
 // ---------------------- change home data from here ------------------------
 export const homeData = {
   hero: {
-    image: "/homeImages/hero.JPG",
+    image: "/homeImages/hero2.jpg",
     title: "Hello!",
   },
   trophies: {
@@ -47,10 +47,11 @@ export const homeData = {
   },
   videos: {
     video: "/videos/resume.mp4",
-    videoCover: "",
+    videoCover: "/homeImages/cover.jpg",
     title: "Youtube",
     linkText: "View More",
     linkAddress: "https://unsplash.com/@arash_payam",
+    smallVideo: "/videos/rezomeV.mp4",
   },
   contact: {
     phoneText: "Give me a visit",

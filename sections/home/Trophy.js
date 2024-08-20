@@ -12,7 +12,7 @@ const Trophy = () => {
       </ParallaxBannerLayer>
       <ParallaxBannerLayer speed={-20}>
         <div className="absolute top-1/4 mx-auto p-3">
-          <div className="grid grid-cols-9 gap-2 gap-y-5 justify-center items-center w-full">
+          <div className="grid md:grid-cols-9 grid-cols-3 gap-2 gap-y-5 justify-center items-center md:w-full w-1/2">
             <Bounce cascade triggerOnce>
               {homeData.trophies.trophyItems.map((item) => (
                 <div className="w-full" key={item.name}>

@@ -3,8 +3,22 @@
 import Link from "next/link";
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 import { homeData } from "../seeds";
+import { useEffect, useState } from "react";
 
 const Videos = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768); // Tailwind's md breakpoint is 768px
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Check initial screen size
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <ParallaxBanner className="md:aspect-video min-h-screen">
       <ParallaxBannerLayer speed={-20}>
@@ -14,10 +28,10 @@ const Videos = () => {
           loop="true"
           poster={homeData.videos.videoCover}
           id="bgvideo"
-          controls="false"
+          playsinline="true"
           className="w-full h-full object-cover object-top"
         >
-          <source src={homeData.videos.video} type="video/mp4" />
+          <source src={isSmallScreen ? homeData.videos.smallVideo : homeData.videos.video} type="video/mp4" />
         </video>
       </ParallaxBannerLayer>
       <ParallaxBannerLayer speed={-20}>
