@@ -33,7 +33,7 @@ const Gallery = () => {
 
   return (
     <div>
-      <div className="grid gap-1 grid-cols-[repeat(auto-fit,minmax(350px,1fr))] auto-rows-[300px] grid-flow-dense min-w-full overflow-hidden">
+      <div className="grid md:gap-1 gap-y-1 md:grid-cols-[repeat(auto-fit,minmax(350px,1fr))] grid-cols-[1fr] auto-rows-[300px] grid-flow-dense min-w-full overflow-hidden">
         {galleryData.map((item, index) => (
           <div key={item.name} className={`${item.className} gallery-item-wrapper`} onClick={() => openModal(index)}>
             <img

@@ -38,6 +38,11 @@ module.exports = {
       fontSize: {
         18: "1.125rem",
         14: "0.875rem",
+        h1: "3.563rem",
+        h2: "1.875rem",
+        h3: "1.2rem",
+        p: "0.75rem",
+        span: "1rem",
       },
     },
   },

@@ -6,14 +6,9 @@ import { Bounce, JackInTheBox } from "react-awesome-reveal";
 
 const Trophy = () => {
   return (
-    <ParallaxBanner className="aspect-[2/1] min-h-[400px]">
+    <ParallaxBanner className="md:aspect-[2/1] min-h-screen">
       <ParallaxBannerLayer speed={-20}>
-        <img
-          src={homeData.trophies.image}
-          alt="trophy"
-          loading="lazy"
-          style={{ objectFit: "cover", objectPosition: "top center", width: "100%", height: "100%" }}
-        />
+        <img src={homeData.trophies.image} alt="trophy" loading="lazy" className="w-full h-full object-top object-cover" />
       </ParallaxBannerLayer>
       <ParallaxBannerLayer speed={-20}>
         <div className="absolute top-1/4 mx-auto p-3">

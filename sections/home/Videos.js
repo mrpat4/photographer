@@ -6,16 +6,27 @@ import { homeData } from "../seeds";
 
 const Videos = () => {
   return (
-    <ParallaxBanner className="max-h-[700px] min-h-[600px]">
+    <ParallaxBanner className="md:aspect-video min-h-screen">
       <ParallaxBannerLayer speed={-20}>
-        <video autoplay="true" muted="true" loop="true" poster={homeData.videos.videoCover} id="bgvideo" style={{ width: "100%" }} controls="false">
+        <video
+          autoplay="true"
+          muted="true"
+          loop="true"
+          poster={homeData.videos.videoCover}
+          id="bgvideo"
+          controls="false"
+          className="w-full h-full object-cover object-top"
+        >
           <source src={homeData.videos.video} type="video/mp4" />
         </video>
       </ParallaxBannerLayer>
       <ParallaxBannerLayer speed={-20}>
         <div className="absolute inset-0 flex flex-col items-start justify-center max-w-7xl mx-auto p-3">
-          <h1 className="text-white font-thin uppercase">{homeData.videos.title}</h1>
-          <Link href={homeData.videos.linkAddress} className="group text-primary uppercase underline underline-offset-8 flex gap-2 items-end text-lg">
+          <h1 className="md:text-h1 text-h2 text-white font-thin uppercase ">{homeData.videos.title}</h1>
+          <Link
+            href={homeData.videos.linkAddress}
+            className="group text-primary uppercase underline underline-offset-8 flex gap-2 items-end md:text-lg text-span"
+          >
             {homeData.videos.linkText}
             <svg
               xmlns="http://www.w3.org/2000/svg"

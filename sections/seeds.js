@@ -50,7 +50,7 @@ export const homeData = {
     videoCover: "",
     title: "Youtube",
     linkText: "View More",
-    linkAddress: "https://youtube.com/arash-payam",
+    linkAddress: "https://unsplash.com/@arash_payam",
   },
   contact: {
     phoneText: "Give me a visit",
@@ -59,7 +59,7 @@ export const homeData = {
       { name: "instagram", icon: <Instagram />, address: "https://instagram.com/arash_payam" },
       { name: "telegram", icon: <Telegram />, address: "https://telegram.me/arash_payam" },
       { name: "phone", icon: <Phone />, address: "tel:+989211808970" },
-      { name: "unsplash", icon: <Unsplash />, address: "" },
+      { name: "unsplash", icon: <Unsplash />, address: "https://unsplash.com/@arash_payam" },
       { name: "fiveHundred", icon: <FiveHundred />, address: "https://500px.com/old-fox" },
     ],
   },

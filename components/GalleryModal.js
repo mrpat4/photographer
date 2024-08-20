@@ -20,7 +20,7 @@ const ImageModal = ({ selectedImage, closeModal, showNextImage, showPrevImage, c
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
-      <div ref={modalRef} className="relative bg-white p-4 rounded-lg shadow-lg">
+      <div ref={modalRef} className="relative bg-white p-4 rounded-lg shadow-lg md:m-0 m-2">
         {/* <span className="absolute top-2 right-2 text-2xl cursor-pointer" onClick={closeModal}>
           ×
         </span> */}
@@ -28,7 +28,7 @@ const ImageModal = ({ selectedImage, closeModal, showNextImage, showPrevImage, c
         <div className="text-center mt-2">{selectedImage.name}</div>
         {currentIndex > 0 && (
           <button
-            className="text-white absolute -left-10 top-1/2 transform -translate-y-1/2 text-2xl hover:text-primary transition-colors duration-300"
+            className="md:text-white text-black absolute md:-left-10 left-0 top-1/2 transform -translate-y-1/2 text-2xl hover:text-primary transition-colors duration-300"
             onClick={showPrevImage}
           >
             ❮
@@ -36,7 +36,7 @@ const ImageModal = ({ selectedImage, closeModal, showNextImage, showPrevImage, c
         )}
         {currentIndex < totalImages - 1 && (
           <button
-            className=" text-white absolute -right-10 top-1/2 transform -translate-y-1/2 text-2xl hover:text-primary transition-colors duration-300"
+            className=" md:text-white text-black absolute md:-right-10 right-0 top-1/2 transform -translate-y-1/2 text-2xl hover:text-primary transition-colors duration-300"
             onClick={showNextImage}
           >
             ❯
