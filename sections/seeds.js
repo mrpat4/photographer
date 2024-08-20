@@ -120,7 +120,7 @@ export const galleryData = [
   { name: "The wish", imageClass: "object-center", className: "", url: "/workImages/39-theWish.JPG" },
   { name: "Sky is hight", imageClass: "", className: "", url: "/workImages/40-skyIsHigh.jpg" },
   { name: "Subway", imageClass: "", className: "", url: "/workImages/subway.jpeg" },
-  { name: "cold Fog", imageClass: "", className: "big", url: "/workImages/coldFog.jpg" },
+  { name: "cold Fog", imageClass: "", className: "", url: "/workImages/coldFog.jpg" },
   { name: "don't Go Further", imageClass: "", className: "vertical", url: "/workImages/dontGoFurther.jpg" },
   { name: "The sea", imageClass: "", className: "", url: "/workImages/theSea.jpg" },
   { name: "Bravery", imageClass: "", className: "horizontal", url: "/workImages/bravery.jpg" },
