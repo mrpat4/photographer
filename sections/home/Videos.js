@@ -26,7 +26,7 @@ const Videos = () => {
           autoplay="true"
           muted="true"
           loop="true"
-          poster={homeData.videos.videoCover}
+          poster={isSmallScreen ? homeData.videos.videoCoverSmall : homeData.videos.videoCover}
           id="bgvideo"
           playsinline="true"
           className="w-full h-full md:object-cover object-contain object-top"

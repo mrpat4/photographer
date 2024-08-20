@@ -48,6 +48,7 @@ export const homeData = {
   videos: {
     video: "/videos/resume.mp4",
     videoCover: "/homeImages/cover.jpg",
+    videoCoverSmall: "/homeImages/videoCoverV.jpg",
     title: "Youtube",
     linkText: "View More",
     linkAddress: "https://www.youtube.com/@arashpayam622",
