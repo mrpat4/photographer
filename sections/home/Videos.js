@@ -23,12 +23,12 @@ const Videos = () => {
     <ParallaxBanner className="md:aspect-video min-h-screen">
       <ParallaxBannerLayer speed={-20}>
         <video
-          autoplay="true"
-          muted="true"
-          loop="true"
+          autoPlay={true}
+          muted={true}
+          loop={true}
           poster={isSmallScreen ? homeData.videos.videoCoverSmall : homeData.videos.videoCover}
           id="bgvideo"
-          playsinline="true"
+          playsInline={true}
           className="w-full h-full object-cover object-top"
         >
           <source

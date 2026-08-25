@@ -1,7 +1,7 @@
-"use client";
-import GalleryModal from "@/components/GalleryModal";
-import { galleryData } from "../seeds";
-import { useState } from "react";
+'use client';
+import GalleryModal from '@/components/GalleryModal';
+import { galleryData } from '../seeds';
+import { useState } from 'react';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -35,9 +35,13 @@ const Gallery = () => {
     <div>
       <div className="grid md:gap-1 gap-y-1 md:grid-cols-[repeat(auto-fit,minmax(350px,1fr))] grid-cols-[1fr] auto-rows-[300px] grid-flow-dense min-w-full overflow-hidden">
         {galleryData.map((item, index) => (
-          <div key={item.name} className={`${item.className} gallery-item-wrapper`} onClick={() => openModal(index)}>
+          <div
+            key={item.name + index}
+            className={`${item.className} gallery-item-wrapper cursor-pointer`}
+            onClick={() => openModal(index)}
+          >
             <img
-              className={`${item.imageClass ? item.imageClass : "object-top"} w-full h-full object-cover rounded-[7px]`}
+              className={`${item.imageClass ? item.imageClass : 'object-top'} w-full h-full object-cover rounded-[7px]`}
               src={item.url}
               alt={item.name}
               loading="lazy"
